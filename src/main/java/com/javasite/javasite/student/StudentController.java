@@ -1,9 +1,9 @@
 package com.javasite.javasite.student;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.Autowired;
 
 
 import java.util.List; 
@@ -12,7 +12,7 @@ import java.util.List;
 @RequestMapping(path = "api/v1/student")
 public class StudentController {
 
-  private StudentService studentService;
+  private final StudentService studentService;
 
   @Autowired
   public StudentController(StudentService studentService) {

@@ -1,7 +1,7 @@
 package com.javasite.javasite.student;
 
-import com.javasite.javasite.student.Student;
-import org.springframework.web.bind.annotation.Component;
+
+import org.springframework.stereotype.Component;
 
 import java.time.LocalDate;
 import java.time.Month;
